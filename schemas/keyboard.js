@@ -40,6 +40,12 @@ export default {
       type: "url",
     },
     {
+      title: "Source",
+      name: "source",
+      type: "array",
+      of: [{ type: "reference", to: [{ type: "source" }] }],
+    },
+    {
       title: "Vendor URL",
       name: "vendor_url",
       type: "url",
