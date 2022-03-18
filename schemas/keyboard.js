@@ -28,47 +28,21 @@ export default {
       },
     },
     {
+      name: "Layout",
+      title: "layout",
+      type: "reference",
+      weak: true,
+      to: [{ type: "keyboard_layout" }],
+    },
+    {
       title: "Geekhack URL",
       name: "geekhack_url",
       type: "url",
     },
     {
-      title: "Layout",
-      name: "layout",
-      type: "array",
-      of: [{ type: "string" }],
-      options: {
-        list: [
-          {
-            title: "60",
-            value: "60",
-          },
-          {
-            title: "65",
-            value: "65",
-          },
-          {
-            title: "75",
-            value: "75",
-          },
-          {
-            title: "TKL",
-            value: "tkl",
-          },
-          {
-            title: "WKL",
-            value: "wkl",
-          },
-          {
-            title: "Compact 1800",
-            value: "compact_1800",
-          },
-          {
-            title: "HHKB",
-            value: "hhkb",
-          },
-        ],
-      },
+      title: "Vendor URL",
+      name: "vendor_url",
+      type: "url",
     },
   ],
 };
